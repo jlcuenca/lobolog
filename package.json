@@ -14,7 +14,19 @@
   },
   "devDependencies": {
     "@types/bcryptjs": "^2.4.6",
+    "@types/node": "24.10.0",
     "@types/react-datepicker": "^6.2.0",
-    "prisma": "^6.19.0"
+    "prisma": "^6.19.0",
+    "tsx": "^4.20.6",
+    "typescript": "5.9.3"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "db:push": "prisma db push",
+    "db:studio": "prisma studio",
+    "db:seed": "tsx prisma/seed.ts"
   }
 }
